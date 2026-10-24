@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=JetBrains+Mono:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-tertiary-fixed-variant":"#005236","tertiary-fixed-dim":"#4edea3","background":"#121316","surface-container":"#1f1f23","error-container":"#93000a","on-primary-fixed":"#160066","outline":"#928f9f","on-error-container":"#ffdad6","surface-tint":"#c6bfff","surface-container-highest":"#343538","error":"#ffb4ab","surface":"#121316","secondary-fixed":"#c4e7ff","on-secondary-fixed":"#001e2c","primary-container":"#8c80ff","surface-bright":"#38393c","primary":"#c6bfff","on-error":"#690005","surface-container-low":"#1b1b1f","on-secondary-container":"#00374d","on-surface":"#e3e2e6","on-tertiary":"#003824","on-primary":"#28029f","inverse-primary":"#5849cc","on-surface-variant":"#c8c4d6","on-background":"#e3e2e6","on-primary-fixed-variant":"#402db4","outline-variant":"#474554","surface-container-lowest":"#0d0e11","inverse-surface":"#e3e2e6","surface-variant":"#343538","secondary-container":"#00a6e0","on-secondary-fixed-variant":"#004c69","primary-fixed-dim":"#c6bfff","surface-dim":"#121316","primary-fixed":"#e4dfff","secondary":"#7bd0ff","on-tertiary-container":"#00311f","on-tertiary-fixed":"#002113","secondary-fixed-dim":"#7bd0ff","on-primary-container":"#22008e","inverse-on-surface":"#2f3034","tertiary-fixed":"#6ffbbe","tertiary":"#4edea3","tertiary-container":"#00a572","on-secondary":"#00354a","surface-container-high":"#292a2d"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-xs":"0.25rem","space-md":"0.75rem","space-xl":"1.5rem","gutter":"0.75rem","margin":"1rem","space-sm":"0.5rem","space-lg":"1rem"},"fontFamily":{"body-md":["Inter"],"code-md":["JetBrains Mono"],"headline-lg":["Inter"],"code-sm":["JetBrains Mono"],"headline-sm":["Inter"],"body-xs":["Inter"],"label-mono":["JetBrains Mono"],"label-md":["Inter"],"body-sm":["Inter"],"code-xs":["JetBrains Mono"],"headline-md":["Inter"]},"fontSize":{"body-md":["0.875rem",{"lineHeight":"1.375rem","fontWeight":"400"}],"code-md":["0.8125rem",{"lineHeight":"1.25rem","fontWeight":"400"}],"headline-lg":["1.25rem",{"lineHeight":"1.75rem","letterSpacing":"-0.015em","fontWeight":"600"}],"code-sm":["0.75rem",{"lineHeight":"1.125rem","fontWeight":"400"}],"headline-sm":["0.875rem",{"lineHeight":"1.25rem","letterSpacing":"-0.005em","fontWeight":"600"}],"body-xs":["0.75rem",{"lineHeight":"1.125rem","fontWeight":"400"}],"label-mono":["0.6875rem",{"lineHeight":"0.875rem","letterSpacing":"0.02em","fontWeight":"500"}],"label-md":["0.75rem",{"lineHeight":"1rem","letterSpacing":"0.01em","fontWeight":"500"}],"body-sm":["0.8125rem",{"lineHeight":"1.25rem","fontWeight":"400"}],"code-xs":["0.6875rem",{"lineHeight":"1rem","fontWeight":"400"}],"headline-md":["1rem",{"lineHeight":"1.5rem","letterSpacing":"-0.01em","fontWeight":"600"}]}}}}</script></head><body class="bg-background font-body-sm text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-low border-r border-outline-variant z-50 flex flex-col justify-between select-none"><div class="flex flex-col"><div class="h-14 px-space-md border-b border-outline-variant flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="ReplayKit Logo" class="h-6 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VAsA7fosyGyed8bKCK-v5gInCqwXsnD2htHm-OTrT3tvXGkO8FrDQQnV8laorfzOTqkjzVElJv05nJ0wKqf819UbrSaX-v7hDwtYVrNW-jw016azjz0Vor4QEIRz5GhqyNxNgt9KZCi45zIeb7sHegeRS68SMIeE_E127TamznY3-D2n3GuXRmkJRoEWVh0J_zRiLCcAfE_f4EHFGTq9Dx454GlMrBCGBw0KqHRTvTpg"/><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight">ReplayKit</span><span class="px-1.5 py-0.5 rounded-DEFAULT bg-surface-container-high text-outline text-[10px] font-label-mono uppercase tracking-wider border border-outline-variant">OSS</span></div><div class="flex items-center"><button class="p-1 rounded-DEFAULT text-outline hover:text-on-surface hover:bg-surface-container-high transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">dock_to_right</span></button></div></div><nav class="flex flex-col py-space-sm px-space-xs gap-0.5" data-active-classes="bg-surface-container-high text-primary font-medium border-l-2 border-primary"><a class="flex items-center gap-2.5 px-space-sm py-1.5 rounded-DEFAULT font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="overview" href="#"><span class="material-symbols-outlined text-[18px]">dashboard</span><span>Overview</span></a><a class="flex items-center gap-2.5 px-space-sm py-1.5 rounded-DEFAULT font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="new-experiment" href="#"><span class="material-symbols-outlined text-[18px]">add_circle</span><span>New Experiment</span></a><a class="flex items-center gap-2.5 px-space-sm py-1.5 rounded-DEFAULT font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="experiments" href="#"><span class="material-symbols-outlined text-[18px]">folder_copy</span><span>Experiments</span></a><a aria-current="page" class="flex items-center gap-2.5 px-space-sm py-1.5 rounded-DEFAULT transition-colors bg-surface-container-high text-primary font-medium border-l-2 border-primary" data-path="ai-analysis" href="#"><span class="material-symbols-outlined text-[18px]">auto_awesome</span><span>AI Analysis</span></a><a class="flex items-center gap-2.5 px-space-sm py-1.5 rounded-DEFAULT font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="compare-runs" href="#"><span class="material-symbols-outlined text-[18px]">compare_arrows</span><span>Compare Runs</span></a><a class="flex items-center gap-2.5 px-space-sm py-1.5 rounded-DEFAULT font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="fix-verification" href="#"><span class="material-symbols-outlined text-[18px]">check_circle</span><span>Fix Verification</span></a><a class="flex items-center gap-2.5 px-space-sm py-1.5 rounded-DEFAULT font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="evidence-reports" href="#"><span class="material-symbols-outlined text-[18px]">description</span><span>Evidence Reports</span></a><a class="flex items-center gap-2.5 px-space-sm py-1.5 rounded-DEFAULT font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="settings" href="#"><span class="material-symbols-outlined text-[18px]">settings</span><span>Settings</span></a></nav></div><div class="p-space-sm border-t border-outline-variant bg-surface-container-lowest/50 flex flex-col gap-space-sm"><div class="flex flex-col gap-1 p-space-xs rounded-DEFAULT bg-surface-container-low border border-outline-variant/60"><div class="flex items-center justify-between"><div class="flex items-center gap-1.5"><span class="h-1.5 w-1.5 rounded-full bg-tertiary"></span><span class="font-label-mono text-label-mono text-on-surface-variant">Local-first: SQLite / FS</span></div></div><div class="flex items-center gap-1 font-label-mono text-label-mono text-outline"><span class="material-symbols-outlined text-[13px] text-primary">smart_toy</span><span>AI: Ollama (llama3-70b-q4)</span></div></div><div class="flex items-center justify-between font-label-mono text-label-mono text-outline px-1"><span>v0.9.4-oss</span><a class="flex items-center gap-1 hover:text-on-surface transition-colors" href="https://github.com/replaykit/replaykit" target="_blank"><span class="material-symbols-outlined text-[14px]">code</span><span>github.com/replaykit</span></a></div><div class="pt-1 border-t border-outline-variant/40 flex items-center justify-between"><div class="flex items-center gap-2 min-w-0"><div class="w-7 h-7 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[16px]">person</span></div><div class="flex flex-col min-w-0"><span class="font-body-xs text-body-xs text-on-surface truncate font-medium">dev@local</span><span class="font-code-xs text-code-xs text-outline truncate">runtime: host</span></div></div><button class="p-1 text-outline hover:text-on-surface hover:bg-surface-container transition-colors rounded-DEFAULT" type="button"><span class="material-symbols-outlined text-[16px]">more_vert</span></button></div></div></aside><div class="pl-64 min-h-screen flex flex-col bg-background"><header class="fixed top-0 left-64 right-0 h-14 bg-surface-container-lowest border-b border-outline-variant z-40 flex items-center justify-between px-space-md"><div class="flex items-center gap-space-md"><img alt="ReplayKit Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VAsA7fosyGyed8bKCK-v5gInCqwXsnD2htHm-OTrT3tvXGkO8FrDQQnV8laorfzOTqkjzVElJv05nJ0wKqf819UbrSaX-v7hDwtYVrNW-jw016azjz0Vor4QEIRz5GhqyNxNgt9KZCi45zIeb7sHegeRS68SMIeE_E127TamznY3-D2n3GuXRmkJRoEWVh0J_zRiLCcAfE_f4EHFGTq9Dx454GlMrBCGBw0KqHRTvTpg"/><div class="flex items-center gap-1.5 font-code-sm text-code-sm text-outline"><span class="text-on-surface-variant hover:text-on-surface cursor-pointer">workspace</span><span class="text-outline-variant">/</span><div class="flex items-center gap-1 px-2 py-1 rounded-DEFAULT bg-surface-container hover:bg-surface-container-high text-on-surface border border-outline-variant cursor-pointer transition-colors"><span class="material-symbols-outlined text-[14px] text-tertiary">folder</span><span class="font-code-sm text-code-sm font-medium">~/projects/payment-service</span><span class="text-outline">[main @ 7f8a92c]</span><span class="material-symbols-outlined text-[14px] text-outline">arrow_drop_down</span></div></div></div><div class="flex items-center gap-space-sm"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-2 text-[16px] text-outline pointer-events-none">search</span><input class="w-64 h-8 pl-8 pr-12 rounded-DEFAULT bg-surface-container-low border border-outline-variant text-on-surface placeholder:text-outline font-body-xs text-body-xs focus:outline-none focus:border-primary transition-colors" placeholder="Search traces, runs, symbols..." type="text"/><div class="absolute right-1.5 flex items-center gap-0.5 px-1 py-0.5 rounded-DEFAULT bg-surface-container-high border border-outline-variant"><span class="font-label-mono text-label-mono text-outline">⌘K</span></div></div><div class="flex items-center gap-1.5 px-2 py-1 rounded-DEFAULT bg-error-container/20 border border-error-container/40 text-error font-code-xs text-code-xs"><span class="h-1.5 w-1.5 rounded-full bg-error animate-pulse"></span><span>3 Runs Pending Verification</span></div><button class="h-8 px-2.5 rounded-DEFAULT bg-primary-container hover:bg-surface-tint text-on-primary-container font-body-sm text-body-sm font-medium flex items-center gap-1.5 transition-colors shadow-sm" type="button"><span class="material-symbols-outlined text-[16px]">add</span><span>New Experiment</span></button><div class="h-4 w-px bg-outline-variant mx-0.5"></div><button class="p-1.5 rounded-DEFAULT text-outline hover:text-on-surface hover:bg-surface-container transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">notifications</span></button><button class="p-1.5 rounded-DEFAULT text-outline hover:text-on-surface hover:bg-surface-container transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">tune</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="w-full pt-14 bg-background min-h-screen"><div class="flex flex-col w-full text-on-surface">
+<!-- Top Operational Subheader / Analysis Meta Bar -->
+<div class="w-full bg-surface-container-lowest px-space-xl py-space-md flex flex-col gap-space-sm shadow-sm">
+<div class="flex flex-wrap items-center justify-between gap-space-md">
+<div class="flex flex-col gap-1 min-w-0">
+<div class="flex flex-wrap items-center gap-2">
+<span class="px-2 py-0.5 rounded-DEFAULT bg-tertiary-container/20 text-tertiary font-label-mono text-label-mono tracking-wide uppercase flex items-center gap-1.5">
+<span class="h-1.5 w-1.5 rounded-full bg-tertiary"></span>
+            Completed (Advisory Hypothesis)
+          </span>
+<span class="font-code-xs text-code-xs text-outline">•</span>
+<a class="font-code-sm text-code-sm text-primary hover:underline flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[15px]">play_circle</span>
+<span>Linked to Run #run-0842</span>
+<span class="text-outline-variant font-code-xs">(`checkout_stripe_webhook_timeout`)</span>
+</a>
+<span class="font-code-xs text-code-xs text-outline">•</span>
+<div class="flex items-center gap-1 px-2 py-0.5 rounded-DEFAULT bg-surface-container text-outline font-label-mono text-label-mono">
+<span class="material-symbols-outlined text-[13px] text-tertiary">lock</span>
+<span>Privacy: 100% On-Device, Zero Egress</span>
+</div>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight flex items-center gap-2">
+<span class="text-error font-code-md">KeyError:</span>
+<span>'X-Stripe-Timestamp' in webhook retry event handler</span>
+</h1>
+</div>
+<!-- Action controls -->
+<div class="flex items-center gap-space-sm shrink-0">
+<button class="h-7 px-2.5 rounded-DEFAULT bg-surface-container hover:bg-surface-container-high text-on-surface font-body-sm text-body-sm flex items-center gap-1.5 transition-colors" type="button">
+<span class="material-symbols-outlined text-[15px] text-outline">tune</span>
+<span>Re-analyze Model</span>
+</button>
+<button class="h-7 px-2.5 rounded-DEFAULT bg-surface-container hover:bg-surface-container-high text-on-surface font-body-sm text-body-sm flex items-center gap-1.5 transition-colors" type="button">
+<span class="material-symbols-outlined text-[15px] text-outline">ios_share</span>
+<span>Export Hypothesis</span>
+</button>
+<button class="h-7 px-3 rounded-DEFAULT bg-primary-container hover:bg-surface-tint text-on-primary-container font-headline-sm text-headline-sm flex items-center gap-1.5 transition-colors shadow-sm" type="button">
+<span>Generate Fix Prompt</span>
+<span class="material-symbols-outlined text-[15px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Telemetry strip -->
+<div class="flex flex-wrap items-center justify-between text-outline font-code-xs text-code-xs pt-1">
+<div class="flex items-center gap-4">
+<span class="flex items-center gap-1.5 text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px] text-primary">memory</span>
+<span>Provider: Ollama (llama3-70b-q4:local)</span>
+</span>
+<span class="text-outline-variant">|</span>
+<span>Context Tokens: 18,420 / 32,768</span>
+<span class="text-outline-variant">|</span>
+<span>Inference Latency: 4.12s</span>
+<span class="text-outline-variant">|</span>
+<span>Confidence Index: 0.86 (High)</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="h-1.5 w-1.5 rounded-full bg-tertiary"></span>
+<span class="font-label-mono text-label-mono text-tertiary uppercase">Local Engine Ready</span>
+</div>
+</div>
+</div>
+<!-- Primary Multi-Pane Workbench -->
+<div class="w-full p-space-md grid grid-cols-1 xl:grid-cols-12 gap-space-md">
+<!-- Left Column: Diagnostic & Evidence Stage (7 Cols) -->
+<div class="xl:col-span-7 flex flex-col gap-space-md min-w-0">
+<!-- 1. Error Summary Card -->
+<section class="bg-surface-container-low rounded-DEFAULT p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface uppercase tracking-wide">Incident Failure Signature</h2>
+</div>
+<span class="px-2 py-0.5 rounded-DEFAULT bg-error-container/30 text-error font-code-xs text-code-xs font-medium">Exit Code 1</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm pt-1">
+<div class="bg-surface-container p-space-sm rounded-DEFAULT flex flex-col">
+<span class="font-label-mono text-label-mono text-outline uppercase">Exception Class</span>
+<span class="font-code-md text-code-md text-error font-medium">KeyError</span>
+</div>
+<div class="bg-surface-container p-space-sm rounded-DEFAULT flex flex-col md:col-span-2">
+<span class="font-label-mono text-label-mono text-outline uppercase">Evaluated Key Target</span>
+<span class="font-code-md text-code-md text-on-surface truncate">'X-Stripe-Timestamp' (dict lookup fail)</span>
+</div>
+</div>
+<div class="flex flex-col gap-1.5 mt-1">
+<div class="flex items-center justify-between">
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase">Stack Trace Frame Snapshot</span>
+<span class="font-code-xs text-code-xs text-outline">Frame 4 of 4 (Terminal crash site)</span>
+</div>
+<div class="bg-surface-container-lowest p-space-sm rounded-DEFAULT font-code-xs text-code-xs leading-relaxed flex flex-col gap-1 overflow-x-auto text-on-surface-variant">
+<div class="flex items-start gap-2">
+<span class="text-outline shrink-0">01</span>
+<span>Traceback (most recent call last):</span>
+</div>
+<div class="flex items-start gap-2">
+<span class="text-outline shrink-0">02</span>
+<span>  File <span class="text-secondary hover:underline cursor-pointer">"worker/redis_consumer.py"</span>, line 48, in consume_retry_batch</span>
+</div>
+<div class="flex items-start gap-2">
+<span class="text-outline shrink-0">03</span>
+<span>    response = dispatch_webhook(event_payload, serialized_headers)</span>
+</div>
+<div class="flex items-start gap-2 bg-error-container/20 text-on-surface px-1 -mx-1 rounded-DEFAULT">
+<span class="text-error shrink-0">04</span>
+<span>  File <span class="text-secondary hover:underline cursor-pointer">"src/payment/webhook.py"</span>, line 112, in process_event</span>
+</div>
+<div class="flex items-start gap-2 text-error font-medium">
+<span class="text-outline shrink-0">05</span>
+<span>    KeyError: 'X-Stripe-Timestamp'</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 2. Likely Root Cause Card (Advisory with Honesty of Uncertainty) -->
+<section class="bg-surface-container-low rounded-DEFAULT p-space-md shadow-sm flex flex-col gap-space-md">
+<div class="flex flex-wrap items-center justify-between gap-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-tertiary">psychology</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Likely Root Cause Analysis</h2>
+</div>
+<div class="flex items-center gap-2">
+<div class="flex items-center gap-1.5 px-2.5 py-0.5 rounded-DEFAULT bg-surface-container text-tertiary font-code-xs text-code-xs">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary animate-pulse"></span>
+<span>Confidence: 86% (High Confidence Hypothesis)</span>
+</div>
+</div>
+</div>
+<!-- Plain language explanation -->
+<div class="p-space-sm bg-surface-container rounded-DEFAULT text-on-surface font-body-sm text-body-sm leading-relaxed">
+<p class="font-body-md text-body-md text-on-surface">
+            The webhook retry dispatcher normalizes incoming HTTP header names to lower-case (<code class="bg-surface-container-lowest text-secondary px-1 py-0.5 rounded-DEFAULT font-code-xs">x-stripe-timestamp</code>), but <code class="bg-surface-container-lowest text-secondary px-1 py-0.5 rounded-DEFAULT font-code-xs">process_event()</code> in <code class="bg-surface-container-lowest text-primary px-1 py-0.5 rounded-DEFAULT font-code-xs">payment/webhook.py</code> explicitly looks for the Pascal-Kebab case <code class="bg-surface-container-lowest text-error px-1 py-0.5 rounded-DEFAULT font-code-xs">'X-Stripe-Timestamp'</code>.
+          </p>
+<p class="mt-2 text-on-surface-variant font-body-xs text-body-xs">
+            In original requests, the raw WSGI dict preserved the case, but the retry worker receives headers deserialized from Redis queue as lower-cased keys due to RFC 9110 compliant queue serialization.
+          </p>
+</div>
+<!-- Uncertainty / Unchecked assumptions -->
+<div class="p-space-sm rounded-DEFAULT bg-surface-container-highest/60 flex flex-col gap-1">
+<div class="flex items-center gap-1.5 text-secondary">
+<span class="material-symbols-outlined text-[15px]">info</span>
+<span class="font-label-md text-label-md uppercase tracking-wider font-semibold">Boundary & Uncertainty Parameters</span>
+</div>
+<p class="font-body-xs text-body-xs text-on-surface-variant">
+            Hypothesis is grounded on exact stack trace line 112 and the deserialization logic in <code class="font-code-xs text-secondary">redis_worker.py</code>.
+            <span class="text-on-surface">Unchecked assumption:</span> verify whether upstream cloud ingress gateway always lowercases headers in HTTP/2 before pushing events to Redis.
+          </p>
+</div>
+<!-- Corroborating Evidence Accordion/List -->
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-mono text-label-mono text-outline uppercase tracking-wider">Telemetry & Data Corroboration</span>
+<div class="flex flex-col gap-1.5">
+<div class="flex items-start gap-2 p-2 rounded-DEFAULT bg-surface-container">
+<span class="material-symbols-outlined text-[16px] text-tertiary shrink-0 mt-0.5">verified</span>
+<div class="flex flex-col min-w-0">
+<span class="font-code-xs text-code-xs text-on-surface font-medium">Traceback frame match</span>
+<span class="font-body-xs text-body-xs text-outline">Exact match at <code class="text-secondary font-code-xs">payment/webhook.py:112</code> matching unhandled dictionary dereference.</span>
+</div>
+</div>
+<div class="flex items-start gap-2 p-2 rounded-DEFAULT bg-surface-container">
+<span class="material-symbols-outlined text-[16px] text-tertiary shrink-0 mt-0.5">data_object</span>
+<div class="flex flex-col min-w-0">
+<span class="font-code-xs text-code-xs text-on-surface font-medium">Redis Ingress Payload Inspection</span>
+<span class="font-body-xs text-body-xs text-outline">Recorded payload inspection shows deserialized dictionary keys: <code class="font-code-xs text-tertiary">['x-stripe-signature', 'x-stripe-timestamp']</code>.</span>
+</div>
+</div>
+<div class="flex items-start gap-2 p-2 rounded-DEFAULT bg-surface-container">
+<span class="material-symbols-outlined text-[16px] text-tertiary shrink-0 mt-0.5">bug_report</span>
+<div class="flex flex-col min-w-0">
+<span class="font-code-xs text-code-xs text-on-surface font-medium">Unit Test Assertion Failure</span>
+<span class="font-body-xs text-body-xs text-outline">Matches failure pattern observed in <code class="text-secondary font-code-xs">tests/integration/test_webhook_retry.py:84</code>.</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Alternative possible cause -->
+<div class="flex items-center justify-between p-space-sm rounded-DEFAULT bg-surface-container text-on-surface-variant font-body-xs text-body-xs">
+<div class="flex items-center gap-2 min-w-0">
+<span class="material-symbols-outlined text-[16px] text-outline shrink-0">alt_route</span>
+<span class="truncate">Alternative Possibility: Header completely stripped by reverse proxy retry middleware</span>
+</div>
+<span class="px-2 py-0.5 rounded-DEFAULT bg-surface-container-high text-outline font-code-xs text-code-xs shrink-0">5% Probability</span>
+</div>
+</section>
+<!-- Inline Diagnostic SVG Diagram: Header Transformation Drift -->
+<section class="bg-surface-container-low rounded-DEFAULT p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-mono text-label-mono text-outline uppercase tracking-wider">Header Mutation Lifecycle Visualization</span>
+<span class="font-code-xs text-code-xs text-tertiary">Non-Destructive Observation</span>
+</div>
+<div class="w-full bg-surface-container-lowest p-space-sm rounded-DEFAULT flex items-center justify-center overflow-x-auto">
+<svg class="w-full max-w-xl h-24 text-outline" fill="none" viewbox="0 0 540 80" xmlns="http://www.w3.org/2000/svg">
+<!-- Node 1: Inbound Webhook -->
+<rect fill="currentColor" fill-opacity="0.08" height="48" rx="2" stroke="currentColor" stroke-dasharray="2 2" stroke-width="1" width="120" x="10" y="16"></rect>
+<text fill="#c8c4d6" font-family="JetBrains Mono" font-size="10" text-anchor="middle" x="70" y="36">HTTP/2 Ingress</text>
+<text fill="#7bd0ff" font-family="JetBrains Mono" font-size="9" text-anchor="middle" x="70" y="50">x-stripe-timestamp</text>
+<!-- Arrow 1 -->
+<path d="M130 40 H165" marker-end="url(#arrow)" stroke="currentColor" stroke-width="1.5"></path>
+<!-- Node 2: Redis Queue Serializer -->
+<rect fill="currentColor" fill-opacity="0.12" height="48" rx="2" stroke="#4edea3" stroke-width="1" width="130" x="170" y="16"></rect>
+<text fill="#e3e2e6" font-family="JetBrains Mono" font-size="10" text-anchor="middle" x="235" y="36">Redis Queue</text>
+<text fill="#4edea3" font-family="JetBrains Mono" font-size="9" text-anchor="middle" x="235" y="50">json.dumps (lowered)</text>
+<!-- Arrow 2 -->
+<path d="M300 40 H335" stroke="currentColor" stroke-width="1.5"></path>
+<!-- Node 3: Consumer Crash Site -->
+<rect fill="#93000a" fill-opacity="0.25" height="48" rx="2" stroke="#ffb4ab" stroke-width="1" width="150" x="340" y="16"></rect>
+<text fill="#ffb4ab" font-family="JetBrains Mono" font-size="10" text-anchor="middle" x="415" y="34">payment/webhook.py:112</text>
+<text fill="#ffb4ab" font-family="JetBrains Mono" font-size="9" font-weight="bold" text-anchor="middle" x="415" y="50">['X-Stripe-Timestamp'] ✕</text>
+</svg>
+</div>
+</section>
+</div>
+<!-- Right Column: Source Inspection & Remediation Protocol (5 Cols) -->
+<div class="xl:col-span-5 flex flex-col gap-space-md min-w-0">
+<!-- 3. Source Location Inspection Panel -->
+<section class="bg-surface-container-low rounded-DEFAULT shadow-sm flex flex-col overflow-hidden">
+<!-- File Header -->
+<div class="px-space-md py-space-sm bg-surface-container flex items-center justify-between">
+<div class="flex items-center gap-2 min-w-0">
+<span class="material-symbols-outlined text-[16px] text-tertiary">code</span>
+<span class="font-code-sm text-code-sm text-on-surface truncate font-medium">src/payment/webhook.py</span>
+<span class="font-code-xs text-code-xs text-primary px-1.5 py-0.2 rounded-DEFAULT bg-surface-container-high">L112</span>
+</div>
+<button class="h-6 px-2 rounded-DEFAULT bg-surface-container-high hover:bg-surface-bright text-outline hover:text-on-surface text-code-xs font-code-xs flex items-center gap-1 transition-colors" type="button">
+<span class="material-symbols-outlined text-[13px]">terminal</span>
+<span>View in stdout</span>
+</button>
+</div>
+<!-- Git commit verification seal -->
+<div class="px-space-md py-1 bg-surface-container-lowest/80 flex items-center gap-1.5 text-outline font-label-mono text-label-mono">
+<span class="material-symbols-outlined text-[13px] text-tertiary">commit</span>
+<span>Verified against local Git commit <code class="text-on-surface">7f8a92c</code> (HEAD)</span>
+</div>
+<!-- Monospaced Code Viewer with Error Callout -->
+<div class="p-space-sm bg-surface-container-lowest overflow-x-auto font-code-xs text-code-xs leading-relaxed select-text">
+<div class="flex items-center gap-3 text-outline">
+<span class="w-8 text-right select-none text-outline-variant">110</span>
+<span class="text-primary">def</span> <span class="text-secondary">process_event</span><span class="text-on-surface">(headers:</span> <span class="text-tertiary">dict</span><span class="text-on-surface">, payload:</span> <span class="text-tertiary">dict</span><span class="text-on-surface">) -> EventResult:</span>
+</div>
+<div class="flex items-center gap-3 text-outline">
+<span class="w-8 text-right select-none text-outline-variant">111</span>
+<span class="text-outline-variant italic">    # Extract Stripe signature verification timestamps</span>
+</div>
+<!-- Line 112 Highlighted Crash Line -->
+<div class="flex items-center gap-3 bg-error-container/30 text-on-error-container px-1 -mx-1 py-0.5 rounded-DEFAULT">
+<span class="w-8 text-right select-none text-error font-bold">112</span>
+<span class="font-bold text-error">>>></span>
+<span class="text-on-surface">    sig_ts = headers[</span><span class="text-error font-medium">'X-Stripe-Timestamp'</span><span class="text-on-surface">]</span>
+<span class="ml-auto px-1.5 py-0.2 rounded-DEFAULT bg-error text-on-error font-label-mono text-[9px] uppercase font-bold tracking-wider">Failure Point</span>
+</div>
+<div class="flex items-center gap-3 text-outline">
+<span class="w-8 text-right select-none text-outline-variant">113</span>
+<span class="text-on-surface">    sig_hash = headers.get(</span><span class="text-secondary">'X-Stripe-Signature'</span><span class="text-on-surface">)</span>
+</div>
+<div class="flex items-center gap-3 text-outline">
+<span class="w-8 text-right select-none text-outline-variant">114</span>
+<span class="text-primary">    if</span> <span class="text-primary">not</span> <span class="text-on-surface">sig_ts</span> <span class="text-primary">or</span> <span class="text-primary">not</span> <span class="text-on-surface">sig_hash:</span>
+</div>
+<div class="flex items-center gap-3 text-outline">
+<span class="w-8 text-right select-none text-outline-variant">115</span>
+<span class="text-primary">        raise</span> <span class="text-error">InvalidSignatureHeaderError</span><span class="text-on-surface">(</span><span class="text-secondary">"Missing stripe auth headers"</span><span class="text-on-surface">)</span>
+</div>
+</div>
+<!-- Quick Code Action Footer -->
+<div class="p-space-xs bg-surface-container flex items-center justify-between text-outline font-code-xs text-code-xs">
+<span class="px-2">Language: Python 3.11</span>
+<button class="px-2 py-1 rounded-DEFAULT hover:bg-surface-container-high text-primary hover:text-on-surface transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[14px]">open_in_new</span>
+<span>Open in local editor (VSCode / Cursor)</span>
+</button>
+</div>
+</section>
+<!-- 4. Recommended Investigation Steps (Interactive Developer Checklist) -->
+<section class="bg-surface-container-low rounded-DEFAULT p-space-md shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary">checklist</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Recommended Verification Steps</h2>
+</div>
+<span class="font-label-mono text-label-mono text-outline uppercase" id="checklist-counter">0 of 3 executed</span>
+</div>
+<div class="flex flex-col gap-space-sm" id="interactive-checklist">
+<!-- Step 1 -->
+<div class="p-space-sm rounded-DEFAULT bg-surface-container flex items-start gap-space-sm hover:bg-surface-container-high transition-colors cursor-pointer group" onclick="toggleChecklist(this)">
+<input class="mt-1 rounded-DEFAULT bg-surface-container-lowest border-outline-variant text-primary focus:ring-0 cursor-pointer pointer-events-none" type="checkbox"/>
+<div class="flex flex-col gap-1 min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">1. Apply Case-Insensitive Lookup</span>
+<span class="px-1.5 py-0.2 rounded-DEFAULT bg-surface-container-highest text-tertiary font-label-mono text-[9px] uppercase">Recommended Fix</span>
+</div>
+<p class="font-body-xs text-body-xs text-on-surface-variant leading-relaxed">
+                Refactor dictionary access to use <code class="font-code-xs text-secondary">headers.get('x-stripe-timestamp') or headers.get('X-Stripe-Timestamp')</code> or wrap with <code class="font-code-xs text-secondary">requests.structures.CaseInsensitiveDict</code>.
+              </p>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="p-space-sm rounded-DEFAULT bg-surface-container flex items-start gap-space-sm hover:bg-surface-container-high transition-colors cursor-pointer group" onclick="toggleChecklist(this)">
+<input class="mt-1 rounded-DEFAULT bg-surface-container-lowest border-outline-variant text-primary focus:ring-0 cursor-pointer pointer-events-none" type="checkbox"/>
+<div class="flex flex-col gap-1 min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">2. Run Targeted Regression Test</span>
+<span class="px-1.5 py-0.2 rounded-DEFAULT bg-surface-container-highest text-outline font-label-mono text-[9px] uppercase">Automated</span>
+</div>
+<div class="bg-surface-container-lowest px-2 py-1 rounded-DEFAULT font-code-xs text-code-xs text-primary flex items-center justify-between">
+<span class="truncate">pytest tests/integration/test_webhook_retry.py -k test_lowercase_header</span>
+<button class="text-outline hover:text-on-surface transition-colors" onclick="event.stopPropagation(); navigator.clipboard.writeText('pytest tests/integration/test_webhook_retry.py -k test_lowercase_header');" title="Copy to clipboard" type="button">
+<span class="material-symbols-outlined text-[14px]">content_copy</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="p-space-sm rounded-DEFAULT bg-surface-container flex items-start gap-space-sm hover:bg-surface-container-high transition-colors cursor-pointer group" onclick="toggleChecklist(this)">
+<input class="mt-1 rounded-DEFAULT bg-surface-container-lowest border-outline-variant text-primary focus:ring-0 cursor-pointer pointer-events-none" type="checkbox"/>
+<div class="flex flex-col gap-1 min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">3. Check Cross-Service Header Compatibility</span>
+<span class="px-1.5 py-0.2 rounded-DEFAULT bg-surface-container-highest text-outline font-label-mono text-[9px] uppercase">Audit</span>
+</div>
+<p class="font-body-xs text-body-xs text-on-surface-variant leading-relaxed">
+                Verify if <code class="font-code-xs text-secondary">stripe-node</code> or peripheral downstream consumers enforce lower-cased headers during retry dispatching.
+              </p>
+</div>
+</div>
+</div>
+<!-- Terminal Quick Action CTA -->
+<div class="pt-2 flex items-center justify-between">
+<span class="font-body-xs text-body-xs text-outline">Ready to commit resolution?</span>
+<button class="h-7 px-3 rounded-DEFAULT bg-primary text-on-primary hover:bg-surface-tint font-headline-sm text-headline-sm transition-colors flex items-center gap-1 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[15px]">auto_fix_high</span>
+<span>Stage Automated Patch</span>
+</button>
+</div>
+</section>
+</div>
+</div>
+<!-- Non-Intrusive Bottom Advisory Guarantee Notice -->
+<div class="w-full px-space-md pb-space-md">
+<div class="w-full bg-surface-container-low px-space-md py-space-sm rounded-DEFAULT flex items-center justify-between gap-space-md text-on-surface-variant font-body-xs text-body-xs shadow-sm">
+<div class="flex items-center gap-2 min-w-0">
+<span class="material-symbols-outlined text-[16px] text-tertiary shrink-0">shield</span>
+<span class="truncate">
+<strong class="text-on-surface font-medium">Advisory Notice:</strong> ReplayKit AI hypotheses are generated for inspection and do not automatically edit code. Always verify against source.
+        </span>
+</div>
+<div class="flex items-center gap-3 shrink-0 font-code-xs text-code-xs text-outline">
+<span>SQLite Hash: <span class="text-on-surface">e91b4a</span></span>
+<span class="text-outline-variant">•</span>
+<span class="text-tertiary flex items-center gap-1">
+<span class="h-1.5 w-1.5 rounded-full bg-tertiary"></span>
+          Workspace Clean
+        </span>
+</div>
+</div>
+</div>
+<script>
+    function toggleChecklist(el) {
+      const checkbox = el.querySelector('input[type="checkbox"]');
+      checkbox.checked = !checkbox.checked;
+      
+      const allCheckboxes = document.querySelectorAll('#interactive-checklist input[type="checkbox"]');
+      const checkedCount = Array.from(allCheckboxes).filter(cb => cb.checked).length;
+      
+      const counter = document.getElementById('checklist-counter');
+      if (counter) {
+        counter.textContent = `${checkedCount} of ${allCheckboxes.length} executed`;
+        if (checkedCount === allCheckboxes.length) {
+          counter.classList.add('text-tertiary');
+          counter.classList.remove('text-outline');
+        } else {
+          counter.classList.remove('text-tertiary');
+          counter.classList.add('text-outline');
+        }
+      }
+    }
+  </script>
+</div></main></div></body></html>

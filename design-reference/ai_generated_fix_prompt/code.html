@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=JetBrains+Mono:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-tertiary-fixed-variant":"#005236","tertiary-fixed-dim":"#4edea3","background":"#121316","surface-container":"#1f1f23","error-container":"#93000a","on-primary-fixed":"#160066","outline":"#928f9f","on-error-container":"#ffdad6","surface-tint":"#c6bfff","surface-container-highest":"#343538","error":"#ffb4ab","surface":"#121316","secondary-fixed":"#c4e7ff","on-secondary-fixed":"#001e2c","primary-container":"#8c80ff","surface-bright":"#38393c","primary":"#c6bfff","on-error":"#690005","surface-container-low":"#1b1b1f","on-secondary-container":"#00374d","on-surface":"#e3e2e6","on-tertiary":"#003824","on-primary":"#28029f","inverse-primary":"#5849cc","on-surface-variant":"#c8c4d6","on-background":"#e3e2e6","on-primary-fixed-variant":"#402db4","outline-variant":"#474554","surface-container-lowest":"#0d0e11","inverse-surface":"#e3e2e6","surface-variant":"#343538","secondary-container":"#00a6e0","on-secondary-fixed-variant":"#004c69","primary-fixed-dim":"#c6bfff","surface-dim":"#121316","primary-fixed":"#e4dfff","secondary":"#7bd0ff","on-tertiary-container":"#00311f","on-tertiary-fixed":"#002113","secondary-fixed-dim":"#7bd0ff","on-primary-container":"#22008e","inverse-on-surface":"#2f3034","tertiary-fixed":"#6ffbbe","tertiary":"#4edea3","tertiary-container":"#00a572","on-secondary":"#00354a","surface-container-high":"#292a2d"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-xs":"0.25rem","space-md":"0.75rem","space-xl":"1.5rem","gutter":"0.75rem","margin":"1rem","space-sm":"0.5rem","space-lg":"1rem"},"fontFamily":{"body-md":["Inter"],"code-md":["JetBrains Mono"],"headline-lg":["Inter"],"code-sm":["JetBrains Mono"],"headline-sm":["Inter"],"body-xs":["Inter"],"label-mono":["JetBrains Mono"],"label-md":["Inter"],"body-sm":["Inter"],"code-xs":["JetBrains Mono"],"headline-md":["Inter"]},"fontSize":{"body-md":["0.875rem",{"lineHeight":"1.375rem","fontWeight":"400"}],"code-md":["0.8125rem",{"lineHeight":"1.25rem","fontWeight":"400"}],"headline-lg":["1.25rem",{"lineHeight":"1.75rem","letterSpacing":"-0.015em","fontWeight":"600"}],"code-sm":["0.75rem",{"lineHeight":"1.125rem","fontWeight":"400"}],"headline-sm":["0.875rem",{"lineHeight":"1.25rem","letterSpacing":"-0.005em","fontWeight":"600"}],"body-xs":["0.75rem",{"lineHeight":"1.125rem","fontWeight":"400"}],"label-mono":["0.6875rem",{"lineHeight":"0.875rem","letterSpacing":"0.02em","fontWeight":"500"}],"label-md":["0.75rem",{"lineHeight":"1rem","letterSpacing":"0.01em","fontWeight":"500"}],"body-sm":["0.8125rem",{"lineHeight":"1.25rem","fontWeight":"400"}],"code-xs":["0.6875rem",{"lineHeight":"1rem","fontWeight":"400"}],"headline-md":["1rem",{"lineHeight":"1.5rem","letterSpacing":"-0.01em","fontWeight":"600"}]}}}}</script></head><body class="bg-background font-body-sm text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-low border-r border-outline-variant z-50 flex flex-col justify-between select-none"><div class="flex flex-col"><div class="h-14 px-space-md border-b border-outline-variant flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="ReplayKit Logo" class="h-6 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VAsA7fosyGyed8bKCK-v5gInCqwXsnD2htHm-OTrT3tvXGkO8FrDQQnV8laorfzOTqkjzVElJv05nJ0wKqf819UbrSaX-v7hDwtYVrNW-jw016azjz0Vor4QEIRz5GhqyNxNgt9KZCi45zIeb7sHegeRS68SMIeE_E127TamznY3-D2n3GuXRmkJRoEWVh0J_zRiLCcAfE_f4EHFGTq9Dx454GlMrBCGBw0KqHRTvTpg"/><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight">ReplayKit</span><span class="px-1.5 py-0.5 rounded-DEFAULT bg-surface-container-high text-outline text-[10px] font-label-mono uppercase tracking-wider border border-outline-variant">OSS</span></div><div class="flex items-center"><button class="p-1 rounded-DEFAULT text-outline hover:text-on-surface hover:bg-surface-container-high transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">dock_to_right</span></button></div></div><nav class="flex flex-col py-space-sm px-space-xs gap-0.5" data-active-classes="bg-surface-container-high text-primary font-medium border-l-2 border-primary"><a class="flex items-center gap-2.5 px-space-sm py-1.5 rounded-DEFAULT font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="overview" href="#"><span class="material-symbols-outlined text-[18px]">dashboard</span><span>Overview</span></a><a class="flex items-center gap-2.5 px-space-sm py-1.5 rounded-DEFAULT font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="new-experiment" href="#"><span class="material-symbols-outlined text-[18px]">add_circle</span><span>New Experiment</span></a><a class="flex items-center gap-2.5 px-space-sm py-1.5 rounded-DEFAULT font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="experiments" href="#"><span class="material-symbols-outlined text-[18px]">folder_copy</span><span>Experiments</span></a><a aria-current="page" class="flex items-center gap-2.5 px-space-sm py-1.5 rounded-DEFAULT transition-colors bg-surface-container-high text-primary font-medium border-l-2 border-primary" data-path="ai-analysis" href="#"><span class="material-symbols-outlined text-[18px]">auto_awesome</span><span>AI Analysis</span></a><a class="flex items-center gap-2.5 px-space-sm py-1.5 rounded-DEFAULT font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="compare-runs" href="#"><span class="material-symbols-outlined text-[18px]">compare_arrows</span><span>Compare Runs</span></a><a class="flex items-center gap-2.5 px-space-sm py-1.5 rounded-DEFAULT font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="fix-verification" href="#"><span class="material-symbols-outlined text-[18px]">check_circle</span><span>Fix Verification</span></a><a class="flex items-center gap-2.5 px-space-sm py-1.5 rounded-DEFAULT font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="evidence-reports" href="#"><span class="material-symbols-outlined text-[18px]">description</span><span>Evidence Reports</span></a><a class="flex items-center gap-2.5 px-space-sm py-1.5 rounded-DEFAULT font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="settings" href="#"><span class="material-symbols-outlined text-[18px]">settings</span><span>Settings</span></a></nav></div><div class="p-space-sm border-t border-outline-variant bg-surface-container-lowest/50 flex flex-col gap-space-sm"><div class="flex flex-col gap-1 p-space-xs rounded-DEFAULT bg-surface-container-low border border-outline-variant/60"><div class="flex items-center justify-between"><div class="flex items-center gap-1.5"><span class="h-1.5 w-1.5 rounded-full bg-tertiary"></span><span class="font-label-mono text-label-mono text-on-surface-variant">Local-first: SQLite / FS</span></div></div><div class="flex items-center gap-1 font-label-mono text-label-mono text-outline"><span class="material-symbols-outlined text-[13px] text-primary">smart_toy</span><span>AI: Ollama (llama3-70b-q4)</span></div></div><div class="flex items-center justify-between font-label-mono text-label-mono text-outline px-1"><span>v0.9.4-oss</span><a class="flex items-center gap-1 hover:text-on-surface transition-colors" href="https://github.com/replaykit/replaykit" target="_blank"><span class="material-symbols-outlined text-[14px]">code</span><span>github.com/replaykit</span></a></div><div class="pt-1 border-t border-outline-variant/40 flex items-center justify-between"><div class="flex items-center gap-2 min-w-0"><div class="w-7 h-7 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[16px]">person</span></div><div class="flex flex-col min-w-0"><span class="font-body-xs text-body-xs text-on-surface truncate font-medium">dev@local</span><span class="font-code-xs text-code-xs text-outline truncate">runtime: host</span></div></div><button class="p-1 text-outline hover:text-on-surface hover:bg-surface-container transition-colors rounded-DEFAULT" type="button"><span class="material-symbols-outlined text-[16px]">more_vert</span></button></div></div></aside><div class="pl-64 min-h-screen flex flex-col bg-background"><header class="fixed top-0 left-64 right-0 h-14 bg-surface-container-lowest border-b border-outline-variant z-40 flex items-center justify-between px-space-md"><div class="flex items-center gap-space-md"><img alt="ReplayKit Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VAsA7fosyGyed8bKCK-v5gInCqwXsnD2htHm-OTrT3tvXGkO8FrDQQnV8laorfzOTqkjzVElJv05nJ0wKqf819UbrSaX-v7hDwtYVrNW-jw016azjz0Vor4QEIRz5GhqyNxNgt9KZCi45zIeb7sHegeRS68SMIeE_E127TamznY3-D2n3GuXRmkJRoEWVh0J_zRiLCcAfE_f4EHFGTq9Dx454GlMrBCGBw0KqHRTvTpg"/><div class="flex items-center gap-1.5 font-code-sm text-code-sm text-outline"><span class="text-on-surface-variant hover:text-on-surface cursor-pointer">workspace</span><span class="text-outline-variant">/</span><div class="flex items-center gap-1 px-2 py-1 rounded-DEFAULT bg-surface-container hover:bg-surface-container-high text-on-surface border border-outline-variant cursor-pointer transition-colors"><span class="material-symbols-outlined text-[14px] text-tertiary">folder</span><span class="font-code-sm text-code-sm font-medium">~/projects/payment-service</span><span class="text-outline">[main @ 7f8a92c]</span><span class="material-symbols-outlined text-[14px] text-outline">arrow_drop_down</span></div></div></div><div class="flex items-center gap-space-sm"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-2 text-[16px] text-outline pointer-events-none">search</span><input class="w-64 h-8 pl-8 pr-12 rounded-DEFAULT bg-surface-container-low border border-outline-variant text-on-surface placeholder:text-outline font-body-xs text-body-xs focus:outline-none focus:border-primary transition-colors" placeholder="Search traces, runs, symbols..." type="text"/><div class="absolute right-1.5 flex items-center gap-0.5 px-1 py-0.5 rounded-DEFAULT bg-surface-container-high border border-outline-variant"><span class="font-label-mono text-label-mono text-outline">⌘K</span></div></div><div class="flex items-center gap-1.5 px-2 py-1 rounded-DEFAULT bg-error-container/20 border border-error-container/40 text-error font-code-xs text-code-xs"><span class="h-1.5 w-1.5 rounded-full bg-error animate-pulse"></span><span>3 Runs Pending Verification</span></div><button class="h-8 px-2.5 rounded-DEFAULT bg-primary-container hover:bg-surface-tint text-on-primary-container font-body-sm text-body-sm font-medium flex items-center gap-1.5 transition-colors shadow-sm" type="button"><span class="material-symbols-outlined text-[16px]">add</span><span>New Experiment</span></button><div class="h-4 w-px bg-outline-variant mx-0.5"></div><button class="p-1.5 rounded-DEFAULT text-outline hover:text-on-surface hover:bg-surface-container transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">notifications</span></button><button class="p-1.5 rounded-DEFAULT text-outline hover:text-on-surface hover:bg-surface-container transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">tune</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="w-full pt-14 bg-background min-h-screen"><div class="flex flex-col w-full">
+<!-- Subtle Ambient Glow -->
+<div class="relative w-full overflow-hidden">
+<div class="absolute -top-32 right-1/4 w-96 h-96 rounded-full bg-primary-container/10 blur-3xl pointer-events-none"></div>
+<div class="absolute top-24 -left-20 w-80 h-80 rounded-full bg-tertiary-container/5 blur-3xl pointer-events-none"></div>
+<!-- Main Workspace Container -->
+<div class="relative z-10 flex flex-col gap-space-lg p-space-md lg:p-space-lg w-full max-w-[1720px] mx-auto">
+<!-- Top Context & Header Row -->
+<div class="flex flex-col gap-space-xs">
+<!-- Breadcrumb & Workspace Metadata -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm text-outline font-code-xs text-code-xs">
+<div class="flex items-center gap-1.5 min-w-0">
+<span class="text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">folder_copy</span>
+<span>Experiments</span>
+</span>
+<span class="text-outline-variant">/</span>
+<span class="text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer font-medium text-secondary">
+              checkout_stripe_webhook_timeout
+            </span>
+<span class="text-outline-variant">/</span>
+<span class="text-primary font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">auto_awesome</span>
+<span>Fix Prompt Generator</span>
+</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded-DEFAULT bg-surface-container-high text-on-surface-variant font-label-mono text-label-mono uppercase tracking-wider">
+              Run: rk_run_8f992a01
+            </span>
+<span class="px-2 py-0.5 rounded-DEFAULT bg-error-container/20 text-error font-code-xs text-code-xs flex items-center gap-1">
+<span class="h-1.5 w-1.5 rounded-full bg-error"></span>
+              Deterministic Repro
+            </span>
+</div>
+</div>
+<!-- Main Title & Intent Statement -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md pt-1">
+<div>
+<div class="flex items-center gap-2.5">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">AI-Generated Fix Prompt</h1>
+<span class="px-2 py-0.5 rounded-DEFAULT bg-primary/10 text-primary font-label-mono text-label-mono border border-primary/20">
+                v2 Schema
+              </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-0.5 max-w-2xl">
+              Synthesize recorded evidence and failure diagnosis into a precise, targeted prompt for AI coding assistants.
+            </p>
+</div>
+<!-- Quick Stat Badge / Safety Indicator -->
+<div class="flex items-center gap-2 px-3 py-1.5 rounded-DEFAULT bg-surface-container-high/80 text-outline font-label-mono text-label-mono shrink-0">
+<span class="material-symbols-outlined text-tertiary text-[16px]">verified_user</span>
+<span class="text-on-surface-variant">Read-only synthesis • Zero external API telemetry</span>
+</div>
+</div>
+</div>
+<!-- Assistant Target Selectors & Mode Strip -->
+<div class="flex flex-col xl:flex-row xl:items-center justify-between gap-space-md p-space-sm rounded-DEFAULT bg-surface-container-low shadow-sm">
+<div class="flex flex-wrap items-center gap-space-sm">
+<span class="font-label-mono text-label-mono text-outline uppercase tracking-wider pl-1">
+            Assistant Target:
+          </span>
+<div class="inline-flex p-0.5 rounded-DEFAULT bg-surface-container-lowest gap-1" id="assistant-selector">
+<button class="assistant-pill px-3 py-1 rounded-DEFAULT font-label-md text-label-md text-outline hover:text-on-surface transition-all flex items-center gap-1.5" data-target="codex" type="button">
+<span class="material-symbols-outlined text-[14px]">terminal</span>
+<span>Codex</span>
+</button>
+<button class="assistant-pill px-3 py-1 rounded-DEFAULT font-label-md text-label-md text-outline hover:text-on-surface transition-all flex items-center gap-1.5" data-target="claude" type="button">
+<span class="material-symbols-outlined text-[14px]">psychology</span>
+<span>Claude Code</span>
+</button>
+<button class="assistant-pill active-pill px-3 py-1 rounded-DEFAULT font-label-md text-label-md bg-primary-container text-on-primary-container font-medium shadow-sm transition-all flex items-center gap-1.5" data-target="cursor" type="button">
+<span class="material-symbols-outlined text-[14px]">near_me</span>
+<span>Cursor (Active)</span>
+</button>
+<button class="assistant-pill px-3 py-1 rounded-DEFAULT font-label-md text-label-md text-outline hover:text-on-surface transition-all flex items-center gap-1.5" data-target="generic" type="button">
+<span class="material-symbols-outlined text-[14px]">smart_toy</span>
+<span>Generic LLM</span>
+</button>
+</div>
+</div>
+<!-- Explanatory Micro Badge -->
+<div class="flex items-center gap-2 text-outline font-code-xs text-code-xs px-2">
+<span class="material-symbols-outlined text-[15px] text-secondary">info</span>
+<span>Customizes instruction format & file-referencing syntax; no automated external API calls are made.</span>
+</div>
+</div>
+<!-- Action Toolbar & Evidence Toggle Ribbons -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md pb-1">
+<!-- Evidence Inclusion Filter Pills -->
+<div class="flex flex-wrap items-center gap-1.5">
+<span class="font-label-mono text-label-mono text-outline uppercase tracking-wider mr-1">
+            Embed:
+          </span>
+<button class="evidence-toggle px-2.5 py-1 rounded-DEFAULT bg-surface-container-high text-tertiary font-code-xs text-code-xs flex items-center gap-1.5 hover:bg-surface-bright transition-colors select-none" data-active="true" type="button">
+<span class="material-symbols-outlined text-[14px]">check</span>
+<span>Original Error & Stacktrace</span>
+</button>
+<button class="evidence-toggle px-2.5 py-1 rounded-DEFAULT bg-surface-container-high text-tertiary font-code-xs text-code-xs flex items-center gap-1.5 hover:bg-surface-bright transition-colors select-none" data-active="true" type="button">
+<span class="material-symbols-outlined text-[14px]">check</span>
+<span>File Path & Line Numbers</span>
+</button>
+<button class="evidence-toggle px-2.5 py-1 rounded-DEFAULT bg-surface-container-high text-tertiary font-code-xs text-code-xs flex items-center gap-1.5 hover:bg-surface-bright transition-colors select-none" data-active="true" type="button">
+<span class="material-symbols-outlined text-[14px]">check</span>
+<span>Redis Deserialization Context</span>
+</button>
+<button class="evidence-toggle px-2.5 py-1 rounded-DEFAULT bg-surface-container-high text-tertiary font-code-xs text-code-xs flex items-center gap-1.5 hover:bg-surface-bright transition-colors select-none" data-active="true" type="button">
+<span class="material-symbols-outlined text-[14px]">check</span>
+<span>Regression Test Command</span>
+</button>
+<button class="evidence-toggle px-2.5 py-1 rounded-DEFAULT bg-surface-container-high text-tertiary font-code-xs text-code-xs flex items-center gap-1.5 hover:bg-surface-bright transition-colors select-none" data-active="true" type="button">
+<span class="material-symbols-outlined text-[14px]">check</span>
+<span>Strict Boundary Constraints</span>
+</button>
+</div>
+<!-- Main Button Actions -->
+<div class="flex items-center flex-wrap gap-2">
+<button class="h-8 px-3 rounded-DEFAULT bg-primary-container hover:bg-surface-tint text-on-primary-container font-body-sm text-body-sm font-medium flex items-center gap-1.5 transition-colors shadow-sm cursor-pointer" id="copy-prompt-btn" type="button">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+<span>Copy Prompt</span>
+<span class="ml-1 px-1 py-0.5 rounded-DEFAULT bg-on-primary-container/20 text-on-primary-container font-label-mono text-[10px]">⌘C</span>
+</button>
+<button class="h-8 px-3 rounded-DEFAULT bg-surface-container hover:bg-surface-container-high text-on-surface font-body-sm text-body-sm font-medium flex items-center gap-1.5 transition-colors cursor-pointer" id="regenerate-prompt-btn" type="button">
+<span class="material-symbols-outlined text-[16px] text-outline">refresh</span>
+<span>Regenerate Prompt</span>
+</button>
+<button class="h-8 px-3 rounded-DEFAULT bg-surface-container hover:bg-surface-container-high text-on-surface font-body-sm text-body-sm font-medium flex items-center gap-1.5 transition-colors cursor-pointer" id="edit-inline-btn" type="button">
+<span class="material-symbols-outlined text-[16px] text-outline">edit_note</span>
+<span>Edit in Place</span>
+</button>
+<button class="h-8 px-3 rounded-DEFAULT bg-surface-container hover:bg-surface-container-high text-on-surface font-body-sm text-body-sm font-medium flex items-center gap-1.5 transition-colors cursor-pointer" type="button">
+<span class="material-symbols-outlined text-[16px] text-outline">archive</span>
+<span>Save to Evidence Report</span>
+</button>
+</div>
+</div>
+<!-- Main Dual-Pane Workspace Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- Center / Left Large Code & Prompt Window (8 or 9 Cols) -->
+<div class="lg:col-span-8 xl:col-span-9 flex flex-col gap-space-sm min-w-0">
+<!-- Editor Chrome Frame -->
+<div class="flex flex-col rounded-DEFAULT bg-surface-container-low shadow-md overflow-hidden">
+<!-- Window Tab Bar / Header -->
+<div class="h-9 px-space-md bg-surface-container-lowest flex items-center justify-between select-none">
+<div class="flex items-center gap-2">
+<!-- Mac-style dot markers purely aesthetic -->
+<div class="flex items-center gap-1.5 mr-2">
+<span class="w-2.5 h-2.5 rounded-full bg-outline-variant/60"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-outline-variant/60"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-outline-variant/60"></span>
+</div>
+<div class="flex items-center gap-1.5 px-3 py-1 bg-surface-container-low text-on-surface font-code-sm text-code-sm border-t-2 border-primary">
+<span class="material-symbols-outlined text-[14px] text-primary">description</span>
+<span class="font-medium">FIX_PROMPT_KEYERROR_STRIPE.md</span>
+<span class="text-outline text-[11px] ml-1">markdown</span>
+</div>
+</div>
+<!-- Editor Right Meta Stats -->
+<div class="flex items-center gap-3 font-label-mono text-label-mono text-outline">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-tertiary">check_circle</span>
+<span>1,418 chars</span>
+</span>
+<span>•</span>
+<span>27 lines</span>
+<span>•</span>
+<span class="text-secondary">Target: Cursor (Composer / Ctrl+I)</span>
+</div>
+</div>
+<!-- Editor Gutter & Code Body -->
+<div class="relative bg-surface-container-lowest flex">
+<!-- Line Numbers Gutter -->
+<div class="select-none py-4 px-3 bg-surface-container-lowest/80 text-right font-code-sm text-code-sm text-outline-variant flex flex-col gap-0 leading-6 border-r border-surface-container font-mono opacity-60">
+<span>01</span>
+<span>02</span>
+<span>03</span>
+<span>04</span>
+<span>05</span>
+<span>06</span>
+<span>07</span>
+<span>08</span>
+<span>09</span>
+<span>10</span>
+<span>11</span>
+<span>12</span>
+<span>13</span>
+<span>14</span>
+<span>15</span>
+<span>16</span>
+<span>17</span>
+<span>18</span>
+<span>19</span>
+<span>20</span>
+<span>21</span>
+<span>22</span>
+<span>23</span>
+<span>24</span>
+<span>25</span>
+<span>26</span>
+<span>27</span>
+</div>
+<!-- Editable Text / Display Container -->
+<div class="relative flex-1 p-4 overflow-x-auto">
+<pre class="font-code-sm text-code-sm text-on-surface leading-6 whitespace-pre font-mono focus:outline-none selection:bg-primary-container selection:text-on-primary-container" contenteditable="false" id="prompt-code-display" spellcheck="false"><span class="text-primary font-semibold"># TASK: Fix KeyError in Stripe Webhook Retry Header Extraction</span>
+
+<span class="text-secondary font-semibold">## CONTEXT & FAILURE EVIDENCE</span>
+ReplayKit reproduced a deterministic failure in <span class="text-tertiary-fixed-dim">`checkout_stripe_webhook_timeout`</span> (Run ID: <span class="text-outline">rk_run_8f992a01</span>):
+- Exit code: <span class="text-error font-semibold">1</span>
+- Error: <span class="text-error font-medium">KeyError: 'X-Stripe-Timestamp'</span>
+- Target file: <span class="text-primary">`src/payment/webhook.py`</span> at line <span class="text-secondary font-medium">112</span>
+- Traceback:
+    <span class="text-outline">File "payment/webhook.py", line 112, in process_event</span>
+      <span class="text-error-container bg-error-container/20 px-1 py-0.5 rounded-DEFAULT text-on-error-container">sig_ts = headers['X-Stripe-Timestamp']</span>
+
+<span class="text-secondary font-semibold">## ROOT CAUSE SUMMARY</span>
+The webhook retry worker deserializes queue payloads where header dictionary keys are normalized to lowercase (<span class="text-tertiary-fixed-dim">`x-stripe-timestamp`</span>), while live webhooks may retain Pascal-Kebab case (<span class="text-tertiary-fixed-dim">`X-Stripe-Timestamp`</span>). Direct dictionary indexing raises <span class="text-error">`KeyError`</span>.
+
+<span class="text-secondary font-semibold">## MANDATORY CONSTRAINTS & SCOPE BOUNDARIES</span>
+1. Investigate and inspect <span class="text-primary">`src/payment/webhook.py`</span> before changing any code.
+2. Make the MINIMAL justified fix. Do NOT perform broad refactoring of the webhook handler or rewrite authentication pipelines.
+3. Use case-insensitive header lookup (e.g., <span class="text-secondary">`CaseInsensitiveDict`</span> or fallback <span class="text-secondary">`.get()`</span> checks) to support both cases safely.
+4. Add or update relevant unit test in <span class="text-primary">`tests/integration/test_webhook_retry.py`</span> verifying both uppercase and lowercase header variants.
+5. Do NOT modify any unrelated files or database models.
+
+<span class="text-secondary font-semibold">## VERIFICATION REQUIREMENT</span>
+After applying the fix, execute the exact verification command:
+<span class="text-tertiary font-medium bg-surface-container-high px-2 py-0.5 rounded-DEFAULT">`pytest tests/integration/test_webhook_retry.py::test_idempotent_event_handling -v`</span>
+Report the exact files changed, diff summary, and actual test output.</pre>
+</div>
+</div>
+<!-- Code Block Footer Status Bar -->
+<div class="h-8 px-space-md bg-surface-container-lowest flex items-center justify-between text-outline font-label-mono text-label-mono">
+<div class="flex items-center gap-3">
+<span class="flex items-center gap-1 text-tertiary">
+<span class="h-1.5 w-1.5 rounded-full bg-tertiary animate-pulse"></span>
+<span>Ready for AI Injection</span>
+</span>
+<span>•</span>
+<span>Format: Markdown / Cursor Rules Ready</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="hover:text-on-surface transition-colors flex items-center gap-1" onclick="document.getElementById('copy-prompt-btn').click()" type="button">
+<span class="material-symbols-outlined text-[13px]">content_copy</span>
+<span>Quick Copy</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Visible Safety Warning Card -->
+<div class="p-space-md rounded-DEFAULT bg-surface-container-low shadow-sm flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-outline text-[20px] shrink-0 mt-0.5">shield</span>
+<div class="flex flex-col gap-0.5">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface">Strict Operator Safety Model</span>
+<span class="px-1.5 py-0.2 rounded-DEFAULT bg-surface-container-high text-outline text-[10px] font-label-mono uppercase">Read-Only Agent</span>
+</div>
+<p class="font-body-xs text-body-xs text-on-surface-variant">
+                ⚠️ AI-generated suggestions may be incorrect. ReplayKit does NOT automatically edit your source code. Review and approve all changes in your IDE before verification.
+              </p>
+</div>
+</div>
+</div>
+<!-- Right Side: Secondary Pane / Context Digest / Next Steps (3 or 4 Cols) -->
+<div class="lg:col-span-4 xl:col-span-3 flex flex-col gap-space-md">
+<!-- Included Evidence Digest Card -->
+<div class="p-space-md rounded-DEFAULT bg-surface-container-low shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">inventory_2</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Included Evidence Digest</h3>
+</div>
+<span class="px-2 py-0.5 rounded-DEFAULT bg-surface-container-high text-outline font-label-mono text-label-mono">
+                4 Facts Bound
+              </span>
+</div>
+<!-- Evidence Metric Rows -->
+<div class="flex flex-col gap-space-sm">
+<!-- Item 1: Error -->
+<div class="p-space-sm rounded-DEFAULT bg-surface-container flex flex-col gap-1">
+<div class="flex items-center justify-between text-outline font-label-mono text-label-mono">
+<span>ROOT EXCEPTION</span>
+<span class="text-error font-medium">Deterministic</span>
+</div>
+<div class="flex items-center gap-2 font-code-sm text-code-sm text-on-surface">
+<span class="material-symbols-outlined text-error text-[16px] shrink-0">bug_report</span>
+<span class="truncate text-error font-medium">KeyError: 'X-Stripe-Timestamp'</span>
+</div>
+</div>
+<!-- Item 2: File & Line -->
+<div class="p-space-sm rounded-DEFAULT bg-surface-container flex flex-col gap-1">
+<div class="flex items-center justify-between text-outline font-label-mono text-label-mono">
+<span>FAILURE LOCATION</span>
+<span class="text-secondary">AST Verified</span>
+</div>
+<div class="flex items-center gap-2 font-code-sm text-code-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[16px] shrink-0">code</span>
+<span class="truncate text-on-surface">src/payment/webhook.py<span class="text-primary font-bold">:112</span></span>
+</div>
+</div>
+<!-- Item 3: Target Test -->
+<div class="p-space-sm rounded-DEFAULT bg-surface-container flex flex-col gap-1">
+<div class="flex items-center justify-between text-outline font-label-mono text-label-mono">
+<span>REPRODUCTION TEST SUITE</span>
+<span class="text-tertiary">PyTest</span>
+</div>
+<div class="flex items-center gap-2 font-code-sm text-code-sm text-on-surface">
+<span class="material-symbols-outlined text-tertiary text-[16px] shrink-0">play_circle</span>
+<span class="truncate text-on-surface">tests/integration/test_webhook_retry.py</span>
+</div>
+</div>
+<!-- Item 4: Git Revision Reference -->
+<div class="p-space-sm rounded-DEFAULT bg-surface-container flex flex-col gap-1">
+<div class="flex items-center justify-between text-outline font-label-mono text-label-mono">
+<span>BASELINE COMMIT REV</span>
+<span class="text-outline">Clean Working Tree</span>
+</div>
+<div class="flex items-center gap-2 font-code-sm text-code-sm text-on-surface">
+<span class="material-symbols-outlined text-outline text-[16px] shrink-0">commit</span>
+<span class="text-on-surface font-mono">7f8a92c</span>
+<span class="text-outline text-code-xs">[main @ HEAD]</span>
+</div>
+</div>
+</div>
+<!-- Evidence Integrity Visual Sparkline -->
+<div class="pt-2 flex flex-col gap-1.5">
+<div class="flex items-center justify-between text-outline font-label-mono text-label-mono">
+<span>Prompt Evidence Fidelity</span>
+<span class="text-tertiary font-medium">98.4% Confidence</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-tertiary rounded-full w-[98%]"></div>
+</div>
+</div>
+</div>
+<!-- Workflow Next Step Card -->
+<div class="p-space-md rounded-DEFAULT bg-surface-container-low shadow-sm flex flex-col gap-space-md relative overflow-hidden">
+<div class="absolute -right-8 -bottom-8 w-32 h-32 rounded-full bg-primary/10 blur-xl pointer-events-none"></div>
+<div class="flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined text-[20px]">swap_horiz</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Workflow Next Step</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Once you apply the fix in Cursor, Claude Code, or your IDE, return to ReplayKit to run Fix Verification against recorded snapshots.
+            </p>
+<!-- Verification Status Indicator -->
+<div class="flex items-center gap-2 p-2 rounded-DEFAULT bg-surface-container text-outline font-code-xs text-code-xs">
+<span class="material-symbols-outlined text-[16px] text-outline">history</span>
+<span>Baseline: 1 failed in 0.42s</span>
+</div>
+<a class="w-full h-9 rounded-DEFAULT bg-surface-container-high hover:bg-surface-bright text-primary font-body-sm text-body-sm font-medium flex items-center justify-center gap-2 transition-all group" data-path="fix-verification" href="#">
+<span>Go to Fix Verification</span>
+<span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<!-- Quick Tip / IDE Keyboard Reference -->
+<div class="p-space-sm rounded-DEFAULT bg-surface-container-lowest text-outline font-body-xs text-body-xs flex flex-col gap-1.5">
+<span class="font-label-mono text-label-mono uppercase tracking-wider text-outline-variant">Cursor IDE Tip</span>
+<p class="text-on-surface-variant leading-relaxed">
+              Open <code class="text-primary font-mono font-medium">src/payment/webhook.py</code> in Cursor, select line 112, hit <kbd class="px-1.5 py-0.5 rounded-DEFAULT bg-surface-container-high text-on-surface font-mono text-[10px]">Ctrl+K</kbd> or paste into Composer (<kbd class="px-1.5 py-0.5 rounded-DEFAULT bg-surface-container-high text-on-surface font-mono text-[10px]">Ctrl+I</kbd>).
+            </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Interactive Pill Selector for Assistant Targets
+  const assistantPills = document.querySelectorAll('.assistant-pill');
+  assistantPills.forEach(pill => {
+    pill.addEventListener('click', () => {
+      assistantPills.forEach(p => {
+        p.classList.remove('active-pill', 'bg-primary-container', 'text-on-primary-container', 'font-medium', 'shadow-sm');
+        p.classList.add('text-outline');
+      });
+      pill.classList.remove('text-outline');
+      pill.classList.add('active-pill', 'bg-primary-container', 'text-on-primary-container', 'font-medium', 'shadow-sm');
+    });
+  });
+
+  // Evidence Filter Toggles
+  const evidenceToggles = document.querySelectorAll('.evidence-toggle');
+  evidenceToggles.forEach(toggle => {
+    toggle.addEventListener('click', () => {
+      const isActive = toggle.getAttribute('data-active') === 'true';
+      if (isActive) {
+        toggle.setAttribute('data-active', 'false');
+        toggle.classList.remove('text-tertiary');
+        toggle.classList.add('text-outline', 'opacity-50');
+        const icon = toggle.querySelector('.material-symbols-outlined');
+        if (icon) icon.textContent = 'add';
+      } else {
+        toggle.setAttribute('data-active', 'true');
+        toggle.classList.add('text-tertiary');
+        toggle.classList.remove('text-outline', 'opacity-50');
+        const icon = toggle.querySelector('.material-symbols-outlined');
+        if (icon) icon.textContent = 'check';
+      }
+    });
+  });
+
+  // Copy Prompt to Clipboard with feedback
+  const copyBtn = document.getElementById('copy-prompt-btn');
+  const promptCodeDisplay = document.getElementById('prompt-code-display');
+
+  if (copyBtn && promptCodeDisplay) {
+    copyBtn.addEventListener('click', async () => {
+      const textToCopy = promptCodeDisplay.innerText;
+      try {
+        await navigator.clipboard.writeText(textToCopy);
+        const originalContent = copyBtn.innerHTML;
+        copyBtn.innerHTML = `
+          <span class="material-symbols-outlined text-[16px]">done</span>
+          <span>Copied!</span>
+        `;
+        copyBtn.classList.remove('bg-primary-container', 'text-on-primary-container');
+        copyBtn.classList.add('bg-tertiary', 'text-on-tertiary');
+
+        setTimeout(() => {
+          copyBtn.innerHTML = originalContent;
+          copyBtn.classList.add('bg-primary-container', 'text-on-primary-container');
+          copyBtn.classList.remove('bg-tertiary', 'text-on-tertiary');
+        }, 2000);
+      } catch (err) {
+        console.error('Clipboard copy failed: ', err);
+      }
+    });
+  }
+
+  // Keyboard shortcut listener for Cmd/Ctrl+C when on this view
+  document.addEventListener('keydown', (e) => {
+    if ((e.metaKey || e.ctrlKey) && e.key === 'c' && window.getSelection().toString() === '') {
+      const copyBtn = document.getElementById('copy-prompt-btn');
+      if (copyBtn) copyBtn.click();
+    }
+  });
+
+  // Edit in place toggle
+  const editBtn = document.getElementById('edit-inline-btn');
+  if (editBtn && promptCodeDisplay) {
+    editBtn.addEventListener('click', () => {
+      const isEditable = promptCodeDisplay.getAttribute('contenteditable') === 'true';
+      if (isEditable) {
+        promptCodeDisplay.setAttribute('contenteditable', 'false');
+        editBtn.innerHTML = `
+          <span class="material-symbols-outlined text-[16px] text-outline">edit_note</span>
+          <span>Edit in Place</span>
+        `;
+        editBtn.classList.remove('bg-primary/20', 'text-primary');
+      } else {
+        promptCodeDisplay.setAttribute('contenteditable', 'true');
+        promptCodeDisplay.focus();
+        editBtn.innerHTML = `
+          <span class="material-symbols-outlined text-[16px] text-tertiary">check</span>
+          <span>Save Changes</span>
+        `;
+        editBtn.classList.add('bg-primary/20', 'text-primary');
+      }
+    });
+  }
+
+  // Regenerate animation feedback
+  const regenBtn = document.getElementById('regenerate-prompt-btn');
+  if (regenBtn) {
+    regenBtn.addEventListener('click', () => {
+      const icon = regenBtn.querySelector('.material-symbols-outlined');
+      if (icon) icon.classList.add('animate-spin');
+      setTimeout(() => {
+        if (icon) icon.classList.remove('animate-spin');
+      }, 750);
+    });
+  }
+</script></main></div></body></html>

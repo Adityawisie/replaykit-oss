@@ -1,0 +1,16 @@
+$ErrorActionPreference = 'Stop'
+Write-Host 'Start ReplayKit backend in one PowerShell window:' -ForegroundColor Cyan
+Write-Host '  cd backend'
+Write-Host '  py -3.11 -m venv .venv'
+Write-Host '  .\.venv\Scripts\Activate.ps1'
+Write-Host '  python -m pip install -e ".[dev]"'
+Write-Host '  Copy-Item .env.example .env'
+Write-Host '  uvicorn app.main:app --reload --host 127.0.0.1 --port 8000'
+Write-Host ''
+Write-Host 'Start frontend in a second PowerShell window:' -ForegroundColor Cyan
+Write-Host '  cd frontend'
+Write-Host '  npm install'
+Write-Host '  Copy-Item .env.example .env'
+Write-Host '  npm run dev'
+Write-Host ''
+Write-Host 'Frontend: http://127.0.0.1:5173  |  API docs: http://127.0.0.1:8000/docs'
